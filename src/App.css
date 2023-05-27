@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+.main-container {
+  flex-grow: 1;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*-----------------------
+--------  HERO  ---------
+-----------------------*/
+
+.hero-container {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero {
+  width: 40%;
+  color: white;
 }
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+/*-----------------------
+--------  ABOUT ---------
+-----------------------*/
+
+.about-container {
+  color: white;
+  display: flex;
+}
+
+.about-item {
+  width: 50%;
+}
+
+/*-----------------------
+------  EXPERIENCE ------
+-----------------------*/
+
+.experience-container {
+  color: white;
+}
+
+/*-----------------------
+--------  FOOTER ---------
+-----------------------*/
+
+.footer-container {
+  background-color: rgb(133, 78, 133);
+  margin-top: 30px;
+}
+
+.footer {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
