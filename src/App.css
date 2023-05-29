@@ -10,12 +10,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  gap: 20px;
 }
 
 .main-container {
   flex-grow: 1;
-  width: 90%;
-  margin: 0 auto;
 }
 
 .header-container {
@@ -23,6 +22,8 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /*-----------------------
@@ -34,6 +35,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
 }
 
 .hero {
@@ -45,17 +49,154 @@ body {
   font-size: 3rem;
 }
 
+
 /*-----------------------
 --------  ABOUT ---------
 -----------------------*/
 
 .about-container {
-  color: white;
+  
+}
+
+.about-section {
   display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .about-item {
-  width: 50%;
+  width: 20%;
+  color: white;
+}
+
+
+
+.passport {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 600px;
+  cursor: pointer;
+  backface-visibility: visible;
+  perspective: 2200px;
+}
+
+.front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  top: 0; left: 0;
+  transform-origin: left center;
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+}
+
+.front {
+  width: 401px;
+  height: 101%;
+  top: -2px;
+}
+
+.front, .back {
+  background: rgb(150, 15, 49);
+  box-shadow: -2em 2em 3em rgba(128, 0, 32, 0.3);
+  font-family: 'Ramaraja', serif;
+  color: gold;
+}
+
+.front p {
+  font-size: 3rem;
+  position: relative;
+  left: 90px;
+  top: 20px;
+}
+
+.front img {
+  position: relative;
+  left: 140px;
+  top: 70px;
+  transform: scale(1.5);
+}
+
+.front img:last-child {
+  position: relative;
+  left: 65px;
+  top: 280px;
+}
+
+.front, .page1, .page3, .page5 {
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.back, .page2, .page4, .page6 {
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.page1 { 
+  background: #efefef;
+}
+
+.page2 {
+  background: #efefef;
+}
+
+.page3 {
+  background: #f5f5f5;
+}
+
+.page4 {
+  background: #f5f5f5;
+}
+
+.page5 {
+  background: #fafafa;
+}
+
+.page6 {
+  background: #fdfdfd;
+  padding: 20px;
+  font-size: 0.75rem;
+}
+
+.passport:hover .front {
+  transform: rotateY(-160deg) scale(1.1);
+  box-shadow: 1em 2em 3em 0 rgba(128, 0, 32, 0.9);
+}
+
+.passport:hover .page1 {
+  transform: rotateY(-150deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.passport:hover .page2 {
+  transform: rotateY(-30deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.passport:hover .page3 {
+  transform: rotateY(-140deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.passport:hover .page4 {
+  transform: rotateY(-40deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.passport:hover .page5 {
+  transform: rotateY(-130deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.passport:hover .page6 {
+  transform: rotateY(-50deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.passport:hover .back {
+  transform: rotateY(-20deg) scale(1.1);
 }
 
 /*-----------------------
@@ -65,6 +206,8 @@ body {
 .experience-container {
   color: white;
 }
+
+
 
 /*-----------------------
 --------  FOOTER ---------
