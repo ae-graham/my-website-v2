@@ -26,8 +26,8 @@ const About = () => {
           <h1>what I've done</h1>
           <p>Strong background in building and commercializing digital solutions for engineering applications.</p>
           <p>Graduated as an Electronics Engineer and spent the last 5 years working in numerous industries such as mining, electronics manufacturing and retail. My passion for creating and building UIs in these sectors, led me to shift my focus on to web-development in 2022.</p> 
-          <h1>how others see me</h1>
-          <p>Organised, committed and reliable professional. Great team player, able to work under pressure, determined, and good at multitasking.</p>
+          {/*<h1>how others see me</h1>
+          <p>Organised, committed and reliable professional. Great team player, able to work under pressure, determined, and good at multitasking.</p>*/}
         </div>
         <div className='about-item'>
           <h1>what I like doing</h1>
