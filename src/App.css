@@ -73,6 +73,12 @@ body {
   filter: grayscale(50%);
 }
 
+.animate__animated.animate__fadeInLeft, 
+.animate__animated.animate__fadeInRight {
+  animation-delay: 0.3s;
+}
+
+
 /*-----------------------
 --------  ABOUT ---------
 -----------------------*/
@@ -131,7 +137,6 @@ body {
   top: 20px;
   transition: 0.6s;
 }
-
 
 
 /*-----------------------

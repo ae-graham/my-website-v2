@@ -1,25 +1,25 @@
 import portrait from '../assets/portrait.png';
 
-const handleHover = () => {
-  const outline = document.getElementById('outline');       //I use this handleHover function to add style to the 'outline div' when hovering over the image.
-  const photo = document.getElementById('photo');
-  photo.addEventListener('mouseover', () => {
-    outline.style.translate = '-10px 10px';
-  })
-  photo.addEventListener('mouseleave', () => {
-    outline.style.translate = '0px 0px';
-  })
+
+const About = ({isVisible}) => {
   
-}
+  const handleHover = () => {
+    const outline = document.getElementById('outline');       //I use this handleHover function to add style to the 'outline div' when hovering over the image.
+    const photo = document.getElementById('photo');
+    photo.addEventListener('mouseover', () => {
+      outline.style.translate = '-10px 10px';
+    })
+    photo.addEventListener('mouseleave', () => {
+      outline.style.translate = '0px 0px';
+    })
+    
+  }  
 
-
-
-const About = () => {
   return(
     <div className='about-container'>
-      <section id='about-section'>
+      <section id='about-section' data-aos='fade-up'>
         <div className='about-item'>
-          <img id='photo' src={portrait} alt='portrait of Alex' onMouseEnter={handleHover} onMouseLeave={handleHover}/>
+          <img id='photo' src={portrait} alt='portrait of Alex' onMouseEnter={handleHover} onMouseLeave={handleHover} />
           <div id='outline'></div>
         </div>
         <div className='about-item'>
