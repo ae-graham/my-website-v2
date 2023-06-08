@@ -1,7 +1,10 @@
 import portrait from '../assets/portrait.png';
+import html from '../assets/html.png';
+import css from '../assets/css.png';
+import javas from '../assets/javas.png';
+import react_logo from '../assets/react_logo.png';
 
-
-const About = ({isVisible}) => {
+const About = () => {
   
   const handleHover = () => {
     const outline = document.getElementById('outline');       //I use this handleHover function to add style to the 'outline div' when hovering over the image.
@@ -16,8 +19,8 @@ const About = ({isVisible}) => {
   }  
 
   return(
-    <div className='about-container'>
-      <section id='about-section' data-aos='fade-up'>
+    <div id='about-container'>
+      <section className='about-section' data-aos='fade-up'> {/* */}
         <div className='about-item'>
           <img id='photo' src={portrait} alt='portrait of Alex' onMouseEnter={handleHover} onMouseLeave={handleHover} />
           <div id='outline'></div>
@@ -33,6 +36,27 @@ const About = ({isVisible}) => {
           <h1>what I like doing</h1>
           <p>When I'm not working I tend to travel a lot. I've visited approximately 50 countries all around the world, and lived in several of them, including Spain, UK, Denmark and now Australia.</p>
           <p>I like to spend my free time working out, looking into blockchain technology & cryptocurrencies, and occassionally hit the slopes during winter as I'm an advanced snowboarder.</p>
+        </div>
+      </section>
+      <section className='skills-section' data-aos='fade-up'>
+        <h1>Technologies I use</h1>
+        <div className='technologies'>
+          <div className='techno-item'>
+            <img src={html} alt='html logo' width={100} height={100}></img>
+            <p>HTML</p>
+          </div>
+          <div className='techno-item'>
+            <img src={css} alt='css logo' width={90} height={98}></img>
+            <p>CSS</p>
+          </div>
+          <div className='techno-item'>
+            <img src={javas} alt='javascript logo' width={100} height={100}></img>
+            <p>JavaScript</p>
+          </div>
+          <div className='techno-item'>
+            <img src={react_logo} alt='react logo' width={100} height={100}></img>
+            <p>React</p>
+          </div>
         </div>
       </section>
     </div>

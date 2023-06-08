@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import About from './components/About';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
 //import Experience from './components/Experience';
 import AOS from 'aos';
@@ -18,7 +19,7 @@ function App() {
       once: true,
     });
   }, [])
-  
+
   return (
     <div className="app-container">
       <div className='main-container'>
@@ -28,6 +29,7 @@ function App() {
         </header>
         <Hero />
         <About />
+        <Projects />
       </div>
       <Footer />
     </div>
