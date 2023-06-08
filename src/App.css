@@ -164,14 +164,25 @@ body {
 
 .projects-container {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  padding: 80px;
+}
+
+.projects-container h1 {
+  text-align: center;
 }
 
 #projects-section {
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 400px 400px;
   gap: 50px;
+  justify-content: center;
   width: 80%;
   margin: 0 auto;
-  padding: 80px 0;
 }
 
 /*-----------------------
@@ -179,20 +190,82 @@ body {
 -----------------------*/
 
 .card-item {
-  border: 1px solid black;
+  background-color: #edefee;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  transition: ease-in 0.3s;
+}
+
+.card-item:hover, .card-item:focus {
+  box-shadow: 0 8px 14px hsla(210,8%,62%,.6);
+  transition: ease-in 0.3s;
 }
 
 .card-item img {
   width: 100%;
   border-radius: 20px 20px 0 0;
+  filter: grayscale(70%);
 }
 
 .card-item h2, .card-item p {
   padding: 0 20px;
 }
+
+.card-item p:last-child {
+  padding: 10px;
+  border: 1px solid black;
+  width: 40%;
+  margin-left: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+/* ---------Sweep To Right ------------*/
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(54, 54, 54);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* ---------Sweep To Right End------------*/
 
 /*-----------------------
 --------  FOOTER ---------

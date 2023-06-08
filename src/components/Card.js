@@ -5,7 +5,7 @@ const Card = (props) => {
       <img src={props.preview} alt='little lemon'></img>
       <h2>{props.title}</h2>
       <p>{props.description}</p>
-      <p>View</p>
+      <p className='hvr-sweep-to-right'>View project &nbsp;&nbsp;&nbsp; &#8594;</p>
     </div>
   )
 }

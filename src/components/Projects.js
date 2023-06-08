@@ -14,12 +14,12 @@ const Projects = () => {
     {
       title: 'First Portfolio Website',
       preview: portfolio,
-      description: 'First version of my portfolio website. Built using HTML, CSS and JavaScript'
+      description: 'First version of my portfolio website. Built using HTML, CSS and JavaScript.'
     },
     {
       title: 'Scoreboard',
       preview: scoreboard,
-      description: "An interactive Scoreboard containing some of Australia's NRL teams. Developed with ReactJS"
+      description: "An interactive scoreboard containing some of Australia's NRL teams. Developed with ReactJS."
     },
     {
       title: 'Full Stack Conf',
@@ -30,6 +30,7 @@ const Projects = () => {
   
   return(
     <div className='projects-container'>
+      <h1>things I've worked on</h1>
       <section id='projects-section'>
         {projects.map((element, index) => {
             return(
