@@ -29,9 +29,9 @@ const Projects = () => {
   ]
   
   return(
-    <div className='projects-container'>
-      <h1>things I've worked on</h1>
-      <section id='projects-section'>
+    <div id='projects-container'>
+      <h1 data-aos='fade-up'>things I've worked on</h1>
+      <section id='projects-section' data-aos='fade-up'>
         {projects.map((element, index) => {
             return(
               <Card 

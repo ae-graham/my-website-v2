@@ -162,23 +162,23 @@ body {
 ------  PROJECTS ------
 -----------------------*/
 
-.projects-container {
+#projects-container {
   background-color: white;
   display: flex;
   flex-direction: column;
   gap: 50px;
   justify-content: center;
-  padding: 80px;
+  height: 100vh;
 }
 
-.projects-container h1 {
+#projects-container h1 {
   text-align: center;
 }
 
 #projects-section {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 400px 400px;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 363px 363px;
   gap: 50px;
   justify-content: center;
   width: 80%;
@@ -190,38 +190,62 @@ body {
 -----------------------*/
 
 .card-item {
-  background-color: #edefee;
+  background-color: transparent;
   border-radius: 20px;
+  perspective: 1000px;
+}
+
+.card-item-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+}
+
+.card-item:hover .card-item-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  background-color: #ebebeb;
+  color: black;
+}
+
+
+.card-back {
+  padding: 20px 30px;
+  transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 20px;
-  transition: ease-in 0.3s;
 }
-
-.card-item:hover, .card-item:focus {
-  box-shadow: 0 8px 14px hsla(210,8%,62%,.6);
-  transition: ease-in 0.3s;
-}
-
 .card-item img {
   width: 100%;
-  border-radius: 20px 20px 0 0;
+  height: 100%;
+  border-radius: 20px;
   filter: grayscale(70%);
 }
 
-.card-item h2, .card-item p {
-  padding: 0 20px;
+.card-item h2 {
+  /*padding: 0 20px;*/
+  margin: 5px 0;
 }
 
 .card-item p:last-child {
   padding: 10px;
   border: 1px solid black;
-  width: 40%;
-  margin-left: 20px;
-  margin-top: 20px;
   cursor: pointer;
   background-color: lightgray;
+  width: 50%;
 }
 
 /* ---------Sweep To Right ------------*/
