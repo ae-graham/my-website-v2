@@ -24,7 +24,7 @@ body {
   align-items: center;
   color: white;
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto -20px;
 }
 
 
@@ -332,15 +332,28 @@ body {
 
 .scroll-top {
   position: fixed;
-  left: 97%;
+  left: 96%;
   bottom: 20px;
+  width: 40px;
+  height: 40px;
   z-index: 1;
   font-size: 1.5rem;
   cursor: pointer;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgb(122, 122, 122);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
 }
+
+.scroll-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 
 
