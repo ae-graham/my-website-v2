@@ -16,7 +16,7 @@ const Nav = () => {
   return(
     <nav>
       <a href='#about' onClick={handleClick('about')}>About</a>
-      <a href='/#'>Experience</a>
+      {/*<a href='/#'>Experience</a>*/}
       <a href='/#projects' onClick={handleClick('projects')}>Projects</a>
       <a href='/#'>Contact</a>
     </nav>

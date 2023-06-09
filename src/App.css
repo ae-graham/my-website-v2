@@ -23,13 +23,14 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
-/*-----------------------
---------  HERO  ---------
------------------------*/
+
+/*------------------------------------------------------------
+-----------------------  HERO  -------------------------------
+-------------------------------------------------------------*/
 
 .hero-container {
   margin-top: 80px;
@@ -79,9 +80,9 @@ body {
 }
 
 
-/*-----------------------
---------  ABOUT ---------
------------------------*/
+/*---------------------------------------------------------------
+-----------------------  ABOUT ----------------------------------
+---------------------------------------------------------------*/
 
 #about-container {
   background-color: lightgray;
@@ -158,9 +159,28 @@ body {
   align-items: center;
 }
 
-/*-----------------------
-------  PROJECTS ------
------------------------*/
+/* ----Float---- */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+/*---------------------------------------------------------------
+-------------------------  PROJECTS -----------------------------
+---------------------------------------------------------------*/
 
 #projects-container {
   background-color: white;
@@ -185,9 +205,9 @@ body {
   margin: 0 auto;
 }
 
-/*-----------------------
---------  CARDS ---------
------------------------*/
+/*------------------------------------------------------------
+-------------------------  CARDS -----------------------------
+------------------------------------------------------------*/
 
 .card-item {
   background-color: transparent;
@@ -291,9 +311,9 @@ body {
 
 /* ---------Sweep To Right End------------*/
 
-/*-----------------------
---------  FOOTER ---------
------------------------*/
+/*--------------------------------------------------------------
+-----------------------  FOOTER --------------------------------
+---------------------------------------------------------------*/
 
 .footer-container {
   background-color: lightgray;
@@ -306,6 +326,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/*----Back to Top Button-----*/
+
+.scroll-top {
+  position: fixed;
+  left: 97%;
+  bottom: 20px;
+  z-index: 1;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 

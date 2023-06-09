@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import ScrollButton from './components/ScrollButton';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Hero />
         <About />
         <Projects />
+        <ScrollButton />
       </div>
       <Footer />
     </div>

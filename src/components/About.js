@@ -42,19 +42,19 @@ const About = () => {
         <h1>Technologies I use</h1>
         <div className='technologies'>
           <div className='techno-item'>
-            <img src={html} alt='html logo' width={100} height={100}></img>
+            <img src={html} alt='html logo' width={100} height={100} className='hvr-float'></img>
             <p>HTML</p>
           </div>
           <div className='techno-item'>
-            <img src={css} alt='css logo' width={90} height={98}></img>
+            <img src={css} alt='css logo' width={90} height={98} className='hvr-float'></img>
             <p>CSS</p>
           </div>
           <div className='techno-item'>
-            <img src={javas} alt='javascript logo' width={100} height={100}></img>
+            <img src={javas} alt='javascript logo' width={100} height={100} className='hvr-float'></img>
             <p>JavaScript</p>
           </div>
           <div className='techno-item'>
-            <img src={react_logo} alt='react logo' width={100} height={100}></img>
+            <img src={react_logo} alt='react logo' width={110} height={100} className='hvr-float'></img>
             <p>React</p>
           </div>
         </div>
