@@ -15,10 +15,10 @@ const Nav = () => {
 
   return(
     <nav>
-      <a href='#about' onClick={handleClick('about')}>About</a>
+      <a href='#about' onClick={handleClick('about')}>about</a>
       {/*<a href='/#'>Experience</a>*/}
-      <a href='/#projects' onClick={handleClick('projects')}>Projects</a>
-      <a href='/#'>Contact</a>
+      <a href='/#projects' onClick={handleClick('projects')}>projects</a>
+      <a href='/#contact' onClick={handleClick('contact')}>contact</a>
     </nav>
   )
 }

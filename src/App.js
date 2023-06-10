@@ -4,9 +4,9 @@ import Nav from './components/Nav';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ae_logo from '../src/assets/ae-logo.png';
-//import Experience from './components/Experience';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -32,6 +32,7 @@ function App() {
         <Hero />
         <About />
         <Projects />
+        <Contact />
         <ScrollButton />
       </div>
       <Footer />

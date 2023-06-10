@@ -39,7 +39,7 @@ const About = () => {
         </div>
       </section>
       <section className='skills-section' data-aos='fade-up'>
-        <h1>Technologies I use</h1>
+        <h1>technologies I use</h1>
         <div className='technologies'>
           <div className='techno-item'>
             <img src={html} alt='html logo' width={100} height={100} className='hvr-float'></img>
