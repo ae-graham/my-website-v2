@@ -19,6 +19,7 @@ const Nav = () => {
       {/*<a href='/#'>Experience</a>*/}
       <a href='/#projects' onClick={handleClick('projects')}>projects</a>
       <a href='/#contact' onClick={handleClick('contact')}>contact</a>
+      <a href='/' target="_blank"  rel="noreferrer" >resumé</a>
     </nav>
   )
 }

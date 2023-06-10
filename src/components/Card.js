@@ -13,6 +13,7 @@ const Card = (props) => {
           <p className='hvr-sweep-to-right'>View project &nbsp;&nbsp;&nbsp; &#8594;</p>
         </div>
       </div>
+      <div id='outline-project'></div>
     </div>
   )
 }
