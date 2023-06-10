@@ -3,6 +3,9 @@ import lemon from '../assets/little-lemon.png';
 import portfolio from '../assets/portfolio1.png';
 import scoreboard from '../assets/scoreboard.png';
 import conf from '../assets/conf.png';
+//import square from '../assets/square.png';
+//import triangle from '../assets/triangle.png';
+//import circle from '../assets/circle.png';
 
 const Projects = () => {
   const projects = [
@@ -29,20 +32,25 @@ const Projects = () => {
   ]
   
   return(
-    <div id='projects-container'>
-      <h1 data-aos='fade-up'>things I've worked on</h1>
-      <section id='projects-section' data-aos='fade-up'>
-        {projects.map((element, index) => {
-            return(
-              <Card 
-                key={index}
-                title={element.title}
-                preview={element.preview}
-                description={element.description}
-              />
-            )
-          })}
-      </section>
+    <div style={{height: '100vh'}}>
+      <div id='projects-container'>
+        <h1 data-aos='fade-up'>things I've worked on</h1>
+        <section id='projects-section' data-aos='fade-up'>
+          {projects.map((element, index) => {
+              return(
+                <Card 
+                  key={index}
+                  title={element.title}
+                  preview={element.preview}
+                  description={element.description}
+                />
+              )
+            })}
+        </section>
+      </div>
+      {/*<img id='square' src={square} alt='square' width={100} height={100}/>
+      <img id='triangle' src={triangle} alt='triangle' width={100} height={100}/>
+      <img id='circle' src={circle} alt='circle' width={100} height={100}/>*/}
     </div>
   )
 }

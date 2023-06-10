@@ -205,6 +205,26 @@ body {
   margin: 0 auto;
 }
 
+#square {
+  position: relative;
+  left: 100px;
+  bottom: 330px;
+  rotate: 20deg;
+}
+
+#triangle {
+  position: relative;
+  bottom: 520px;
+  rotate: -20deg;
+}
+
+#circle {
+  position: relative;
+  right: 130px;
+  bottom: 590px;
+  rotate: -30deg;
+}
+
 /*------------------------------------------------------------
 -------------------------  CARDS -----------------------------
 ------------------------------------------------------------*/

@@ -26,7 +26,7 @@ function App() {
     <div className="app-container">
       <div className='main-container'>
         <header className="header-container" data-aos='slide-down'>
-          <img src={ae_logo} alt='main logo of the website' width={75} height={82} />
+          <img src={ae_logo} alt='main logo of the website' width={82} height={82} />
           <Nav />
         </header>
         <Hero />
