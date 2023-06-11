@@ -20,7 +20,7 @@ const About = () => {
 
   return(
     <div id='about-container'>
-      <section className='about-section' data-aos='fade-up'> {/* */}
+      <section className='about-section' data-aos='fade-up'>
         <div className='about-item'>
           <img id='photo' src={portrait} alt='portrait of Alex' onMouseEnter={handleHover} onMouseLeave={handleHover} />
           <div id='outline'></div>
@@ -38,7 +38,7 @@ const About = () => {
           <p>I like to spend my free time working out, looking into blockchain technology & cryptocurrencies, and occassionally hit the slopes during winter as I'm an advanced snowboarder.</p>
         </div>
       </section>
-      <section className='skills-section' data-aos='fade-up'>
+      <section className='techno-section' data-aos='fade-up'>
         <h1>technologies I use</h1>
         <div className='technologies'>
           <div className='techno-item'>
