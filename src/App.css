@@ -21,7 +21,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
   width: 80%;
   margin: 10px auto -20px;
 }
@@ -149,6 +148,7 @@ body {
   gap: 50px;
   justify-content: center;
   padding-bottom: 70px;
+  align-items: center;
 }
 
 #projects-container h1 {
@@ -165,6 +165,12 @@ body {
   justify-content: center;
   width: 80%;
   margin: 0 auto;
+}
+
+#arrow {
+  width: 160px;
+  height: 160px;
+  rotate: 130deg;
 }
 
 #square {
