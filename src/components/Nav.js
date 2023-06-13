@@ -45,7 +45,7 @@ const Nav = () => {
           <li><a href='#about' onClick={handleClick('about')}>about</a></li>
           <li><a href='/#projects' onClick={handleClick('projects')}>projects</a></li>
           <li><a href='/#contact' onClick={handleClick('contact')}>contact</a></li>
-          <li><a href={cv} target="_blank"  rel="noreferrer">resumé</a></li>
+          <li><a href={cv} target="_blank" rel="noreferrer">resumé</a></li>
         </ul>
       </nav>
       <span className="lines" onClick={openNav}>&#9776;</span>

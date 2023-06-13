@@ -21,7 +21,7 @@ const Card = (props) => {
         <div className='card-back'>
           <h2>{props.title}</h2>
           <p>{props.description}</p>
-          <p className='hvr-sweep-to-right'>View project &nbsp;&nbsp;&nbsp; &#8594;</p>
+          <p className='hvr-sweep-to-right'><a href={props.url} target="_blank" rel="noreferrer">View project &nbsp;&nbsp;&nbsp; &#8594;</a></p>
         </div>
       </div>
       <div id='outline-project'></div>
