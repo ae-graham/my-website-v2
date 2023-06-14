@@ -33,6 +33,7 @@ body {
 .hero-container {
   display: block;
   padding-top: 100px;
+  padding-bottom: 10px;
   text-align: center;
   width: 80%;
   margin: 0 auto;
@@ -147,7 +148,7 @@ body {
 ---------------------------------------------------------------*/
 
 #projects-container {
-  background-color: lightgrey;
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -339,7 +340,7 @@ body {
 .footer-container {
   background-color: lightgray;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 
@@ -519,6 +520,7 @@ body {
 
   .hero-container {
     height: 100vh;
+    padding-top: 0px;
   }
 
   .hero h1 {
@@ -632,6 +634,7 @@ body {
   .footer-container {
     margin-top: -50px;
     padding-bottom: 15px;
+    padding-top: 20px;
   }
 
 }
