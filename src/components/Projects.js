@@ -11,7 +11,7 @@ const Projects = () => {
       title: 'Little Lemon',
       preview: lemon,
       description: 'Little Lemon Restaurant. Developed by using Create React App (ReactJS).',
-      url: 'https://www.ae-graham.com/projects/little-lemon'
+      url: 'https://ae-graham.github.io/little-lemon/'
     },
     {
       title: 'First Portfolio Website',
@@ -23,13 +23,13 @@ const Projects = () => {
       title: 'Scoreboard',
       preview: scoreboard,
       description: "An interactive scoreboard containing some of Australia's NRL teams. Developed with ReactJS.",
-      url: '/projects/scoreboard/index.html'
+      url: 'https://ae-graham.github.io/scoreboard/'
     },
     {
       title: 'Full Stack Conf',
       preview: conf,
       description: 'Conference website template. Built with HTML and Bootstrap CSS.',
-      url: '/projects/bootstrap_conf/index.html'
+      url: 'bootstrap_conf/index.html'
     }
   ]
   
