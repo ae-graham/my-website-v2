@@ -84,6 +84,7 @@ body {
   gap: 50px;
   text-align: center;
   padding-bottom: 50px;
+  padding-top: 25px;
 }
 
 .about-section {
@@ -341,6 +342,7 @@ body {
   background-color: lightgray;
   text-align: center;
   padding-top: 40px;
+  padding-bottom: 15px;
 }
 
 
@@ -633,7 +635,6 @@ body {
 
   .footer-container {
     margin-top: -50px;
-    padding-bottom: 15px;
     padding-top: 20px;
   }
 

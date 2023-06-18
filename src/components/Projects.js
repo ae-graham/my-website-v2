@@ -17,19 +17,19 @@ const Projects = () => {
       title: 'First Portfolio Website',
       preview: portfolio,
       description: 'First version of my portfolio website. Built using HTML, CSS and JavaScript.',
-      url: ''
+      url: '/projects/my-website-v1/index.html'
     },
     {
       title: 'Scoreboard',
       preview: scoreboard,
       description: "An interactive scoreboard containing some of Australia's NRL teams. Developed with ReactJS.",
-      url: ''
+      url: '/projects/scoreboard/index.html'
     },
     {
       title: 'Full Stack Conf',
       preview: conf,
       description: 'Conference website template. Built with HTML and Bootstrap CSS.',
-      url: ''
+      url: '/projects/bootstrap_conf/index.html'
     }
   ]
   
@@ -39,7 +39,7 @@ const Projects = () => {
         <h1 data-aos='fade-up'>things I've worked on</h1>
         <p className='belle' data-aos='fade-left'>{window.innerWidth < 1200 ? `click on a project` : `hover over a project`}</p>
         <img id='arrow' src={arrow} alt='arrow' data-aos='fade-right'></img>
-        <section id='projects-section' data-aos='fade-up'>
+        <section id='projects-section'>
           {projects.map((element, index) => {
               return(
                 <Card 

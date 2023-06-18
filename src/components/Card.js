@@ -13,7 +13,7 @@ const Card = (props) => {
   })
 
   return (
-    <div className="card-item">
+    <div className="card-item" data-aos='fade-up'>
       <div className='card-item-inner'>
         <div className='card-front'>
           <img src={props.preview} alt='little lemon' id='preview-img'></img>
