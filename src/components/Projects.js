@@ -17,7 +17,7 @@ const Projects = () => {
       title: 'First Portfolio Website',
       preview: portfolio,
       description: 'First version of my portfolio website. Built using HTML, CSS and JavaScript.',
-      url: '/projects/my-website-v1/index.html'
+      url: 'https://ae-graham.github.io/my-website-v1/'
     },
     {
       title: 'Scoreboard',
@@ -29,7 +29,7 @@ const Projects = () => {
       title: 'Full Stack Conf',
       preview: conf,
       description: 'Conference website template. Built with HTML and Bootstrap CSS.',
-      url: 'bootstrap_conf/index.html'
+      url: 'https://ae-graham.github.io/bootstrap_conf/'
     }
   ]
   
