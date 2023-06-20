@@ -8,9 +8,7 @@ const Contact = () => {
       <h1 data-aos='fade-up'>let's connect!</h1>
       <section id='contact-section' data-aos='fade-up'>
         <p>If you have any questions, business inquiries or just wish to get in touch...</p>
-        <button type="button" style={{border: 'none', backgroundColor: 'transparent'}}>
-          <a href="mailto:ae.graham93@gmail.com?subject=Business%20Opportunity" className={window.innerWidth >= 830 ? 'hvr-sweep-to-right hello' : 'hello'}>say hello!</a>
-        </button>
+        <a href="mailto:ae.graham93@gmail.com?subject=Business%20Opportunity" className={window.innerWidth >= 830 ? 'hvr-sweep-to-right hello' : 'hello'}>say hello!</a>
         <p>You can also connect with me through the following platforms</p>
         <div className='socials'>
           <a href="https://github.com/ae-graham" target="_blank"  rel="noreferrer">

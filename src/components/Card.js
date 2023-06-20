@@ -8,7 +8,7 @@ const Card = (props) => {
     for (let i=0; i < card_items.length; i++) {
       card_items[i].addEventListener('click', () => {
         card_items[i].classList.toggle('mobile', window.innerWidth < 1200)
-      })
+      }, {once : true})
     }
   })
 
