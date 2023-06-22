@@ -1,19 +1,13 @@
-import { useEffect } from "react";
-
 
 const Card = (props) => {
   
-  useEffect(() => {
-    const card_items = document.querySelectorAll('.card-item');
-    for (let i=0; i < card_items.length; i++) {
-      card_items[i].addEventListener('click', () => {
-        card_items[i].classList.toggle('mobile', window.innerWidth < 1200)
-      }, {once : true})
-    }
-  })
+
+  const handleRotate = (event) => {
+    event.currentTarget.classList.toggle('mobile');
+  }
 
   return (
-    <div className="card-item" data-aos='fade-up'>
+    <div className="card-item" data-aos='fade-up' onClick={handleRotate}>
       <div className='card-item-inner'>
         <div className='card-front'>
           <img src={props.preview} alt='little lemon' id='preview-img'></img>

@@ -10,7 +10,7 @@ const Projects = () => {
     {
       title: 'Little Lemon',
       preview: lemon,
-      description: 'Little Lemon Restaurant. Developed by using Create React App (ReactJS).',
+      description: 'Little Lemon Restaurant. Developed with ReactJS.',
       url: 'https://ae-graham.github.io/little-lemon/'
     },
     {
