@@ -37,7 +37,7 @@ const Projects = () => {
     <div className="projects-outer-container">
       <div id='projects-container'>
         <h1 data-aos='fade-up'>things I've worked on</h1>
-        <p className='belle' data-aos='fade-left'>{window.innerWidth < 1200 ? `click on a project` : `hover over a project`}</p>
+        <p className='belle' data-aos='fade-left'>click on a project</p>
         <img id='arrow' src={arrow} alt='arrow' data-aos='fade-right'></img>
         <section id='projects-section'>
           {projects.map((element, index) => {
